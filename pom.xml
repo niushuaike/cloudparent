@@ -29,6 +29,7 @@
         <!--配置中心-->
         <module>config-server</module>
         <module>config-client</module>
+        <module>config-eureka-server</module>
 
     </modules>
 
