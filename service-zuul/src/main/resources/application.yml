@@ -1,0 +1,19 @@
+server:
+  port: ${port} #  本服务端口号
+
+spring:
+  application:
+    name: service-zuul      #应用名称，以后服务的调用需用此名称
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:7070/eureka/ # 注册中心地址
+zuul:
+  routes:
+    api-a:
+      path: /api-a/**
+      serviceId: service-ribbon
+    api-b:
+      path: /api-b/**
+      serviceId: service-feign

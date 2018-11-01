@@ -1,0 +1,14 @@
+server:
+  #  本服务端口号
+  port: 7078
+
+spring:
+  application:
+    #    应用名称，以后服务的调用需用此名称
+    name: service-ribbon
+
+eureka:
+  client:
+    serviceUrl:
+      #      注册中心地址
+      defaultZone: http://localhost:7070/eureka/

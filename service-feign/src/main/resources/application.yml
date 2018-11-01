@@ -1,0 +1,16 @@
+server:
+  #  本服务端口号
+  port: 7079
+
+spring:
+  application:
+    #    应用名称，以后服务的调用需用此名称
+    name: service-feign
+eureka:
+  client:
+    serviceUrl:
+      #      注册中心地址
+      defaultZone: http://localhost:7070/eureka/
+feign:
+  hystrix:
+    enabled: true
